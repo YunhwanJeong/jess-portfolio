@@ -1,7 +1,5 @@
 # build output
 dist/
-# build output for gitlab
-public/
 
 # generated types
 .astro/
