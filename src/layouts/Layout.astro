@@ -30,10 +30,10 @@ const { title } = Astro.props;
                     </a>
                 </div>
                 <div class="nav-wrapper">
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/work">Work</a>
-                    <a href="/contact">Contact</a>
+                    <a href="/">Projects</a>
+                    <a href="/">Experiments</a>
+                    <a href="/">Interests</a>
+                    <a href="/">Contact</a>
                 </div>
             </nav>
         </header>
@@ -52,14 +52,22 @@ const { title } = Astro.props;
         src: url('/fonts/PretendardVariable.woff2') format('woff2-variations');
     }
 
+    :root {
+        --Black: #2d2d2d;
+    }
+
     html {
         font-family: 'Pretendard Variable';
         background: #ededed;
     }
+
+    a {
+        text-decoration: none;
+    }
 </style>
 <style>
     header {
-        padding: 11px 40px;
+        padding: 11px 96px;
     }
 
     nav {
@@ -71,5 +79,12 @@ const { title } = Astro.props;
     .nav-wrapper {
         display: flex;
         gap: 40px;
+    }
+
+    .nav-wrapper a {
+        color: var(--Black);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
     }
 </style>
