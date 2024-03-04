@@ -24,13 +24,19 @@ const { title } = Astro.props;
     <body>
         <header>
             <nav>
-                <div>
+                <div class="logo-wrapper">
                     <a href="/">
                         <img src="/favicon.svg" alt="Jess's logo" />
                     </a>
                 </div>
                 <div class="nav-wrapper">
-                    <a href="/">Projects</a>
+                    <button class="nav-item">
+                        <span>Projects</span>
+                        <img
+                            src="/icons/keyboard-arrow-down.svg"
+                            alt="Arrow down"
+                        />
+                    </button>
                     <a href="/">Experiments</a>
                     <a href="/">Interests</a>
                     <a href="/">Contact</a>
@@ -64,6 +70,10 @@ const { title } = Astro.props;
     a {
         text-decoration: none;
     }
+
+    button {
+        border: none;
+    }
 </style>
 <style>
     header {
@@ -76,9 +86,20 @@ const { title } = Astro.props;
         align-items: center;
     }
 
+    .logo-wrapper {
+        width: 40px;
+        height: 40px;
+    }
+
     .nav-wrapper {
         display: flex;
         gap: 40px;
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 4px;
     }
 
     .nav-wrapper a {
