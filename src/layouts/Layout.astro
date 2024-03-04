@@ -31,15 +31,17 @@ const { title } = Astro.props;
                 </div>
                 <div class="nav-wrapper">
                     <button class="nav-item">
-                        <span>Projects</span>
+                        <span class="nav-item__label nav-item__label--bold"
+                            >Projects</span
+                        >
                         <img
                             src="/icons/keyboard-arrow-down.svg"
                             alt="Arrow down"
                         />
                     </button>
-                    <a href="/">Experiments</a>
-                    <a href="/">Interests</a>
-                    <a href="/">Contact</a>
+                    <a href="/" class="nav-item__label">Experiments</a>
+                    <a href="/" class="nav-item__label">Interests</a>
+                    <a href="/" class="nav-item__label">Contact</a>
                 </div>
             </nav>
         </header>
@@ -102,10 +104,14 @@ const { title } = Astro.props;
         gap: 4px;
     }
 
-    .nav-wrapper a {
+    .nav-item__label {
         color: var(--Black);
         font-size: 15px;
         font-weight: 400;
         line-height: 28px;
+    }
+
+    .nav-item__label--bold {
+        font-weight: 700;
     }
 </style>
