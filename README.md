@@ -1,1 +1,1 @@
-[🔗 Designer wife's Portfolio Link](https://jess-oh-portfolio.vercel.app/)
+[🔗 My Designer partner's Portfolio](https://jess-oh-portfolio.vercel.app/)
