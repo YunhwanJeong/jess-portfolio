@@ -20,6 +20,42 @@ const { title } = Astro.props;
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
+        <script>
+            (function (d) {
+                var config = {
+                        kitId: 'ifp3api',
+                        scriptTimeout: 3000,
+                        async: true,
+                    },
+                    h = d.documentElement,
+                    t = setTimeout(function () {
+                        h.className =
+                            h.className.replace(/\bwf-loading\b/g, '') +
+                            ' wf-inactive';
+                    }, config.scriptTimeout),
+                    tk = d.createElement('script'),
+                    f = false,
+                    s = d.getElementsByTagName('script')[0],
+                    a;
+                h.className += ' wf-loading';
+                tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+                tk.async = true;
+                // @ts-ignore
+                tk.onload = tk.onreadystatechange = function () {
+                    // @ts-ignore
+                    a = this.readyState;
+                    if (f || (a && a != 'complete' && a != 'loaded')) return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        // @ts-ignore
+                        Typekit.load(config);
+                    } catch (e) {}
+                };
+                // @ts-ignore
+                s.parentNode.insertBefore(tk, s);
+            })(document);
+        </script>
     </head>
     <body>
         <header>
@@ -52,20 +88,14 @@ const { title } = Astro.props;
     </body>
 </html>
 <style is:global>
-    @font-face {
-        font-family: 'Pretendard Variable';
-        font-weight: 45 920;
-        font-style: normal;
-        font-display: swap;
-        src: url('/fonts/PretendardVariable.woff2') format('woff2-variations');
-    }
-
     :root {
         --Black: #2d2d2d;
     }
 
     html {
-        font-family: 'Pretendard Variable';
+        font-family: 'pretendard', sans-serif;
+        font-weight: 400;
+        font-style: normal;
         background: #ededed;
     }
 
