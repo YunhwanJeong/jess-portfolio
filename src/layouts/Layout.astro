@@ -65,22 +65,30 @@ const { title } = Astro.props;
                         <img src="/favicon.svg" alt="Jess's logo" />
                     </a>
                 </div>
-                <div class="nav-wrapper">
-                    <button class="nav-item">
-                        <span class="nav-item__label nav-item__label--bold"
-                            >Projects</span
-                        >
-                        <div class="nav-item__icon-wrapper">
-                            <img
-                                src="/icons/keyboard-arrow-down.svg"
-                                alt="Arrow down"
-                            />
-                        </div>
-                    </button>
-                    <a href="/" class="nav-item__label">Experiments</a>
-                    <a href="/" class="nav-item__label">Interests</a>
-                    <a href="/" class="nav-item__label">Contact</a>
-                </div>
+                <ul class="nav-list">
+                    <li>
+                        <button class="nav-item__icon-button-with-text">
+                            <span class="nav-item__label nav-item__label--bold">
+                                Projects
+                            </span>
+                            <div class="nav-item__icon-wrapper">
+                                <img
+                                    src="/icons/keyboard-arrow-down.svg"
+                                    alt="Arrow down"
+                                />
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <a href="/" class="nav-item__label">Experiments</a>
+                    </li>
+                    <li>
+                        <a href="/" class="nav-item__label">Interests</a>
+                    </li>
+                    <li>
+                        <a href="/" class="nav-item__label">Contact</a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <main>
@@ -93,21 +101,23 @@ const { title } = Astro.props;
     :root {
         --Black: #2d2d2d;
     }
-
     html {
         font-family: 'pretendard', sans-serif;
         font-weight: 400;
         font-style: normal;
         background: #ededed;
     }
-
+    /* Reset CSS */
     a {
         text-decoration: none;
     }
-
     button {
         border: none;
         background-color: transparent;
+    }
+    ul,
+    ol {
+        list-style-type: none;
     }
 </style>
 <style>
@@ -126,12 +136,12 @@ const { title } = Astro.props;
         height: 40px;
     }
 
-    .nav-wrapper {
+    .nav-list {
         display: flex;
         gap: 40px;
     }
 
-    .nav-item {
+    .nav-item__icon-button-with-text {
         display: flex;
         align-items: center;
         gap: 4px;
