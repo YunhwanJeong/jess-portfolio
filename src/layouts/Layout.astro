@@ -58,13 +58,13 @@ const { title } = Astro.props;
         </script>
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="logo-wrapper">
-                    <a href="/">
-                        <img src="/favicon.svg" alt="Jess's logo" />
-                    </a>
-                </div>
+        <header id="side-header">
+            <div class="logo-wrapper">
+                <a href="/">
+                    <img src="/favicon.svg" alt="Jess's logo" />
+                </a>
+            </div>
+            <nav aria-label="Main">
                 <ul class="nav-list">
                     <li>
                         <button class="nav-item__icon-button-with-text">
@@ -121,11 +121,8 @@ const { title } = Astro.props;
     }
 </style>
 <style>
-    header {
+    #side-header {
         padding: 11px 96px;
-    }
-
-    nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
