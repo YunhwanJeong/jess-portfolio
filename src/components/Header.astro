@@ -7,11 +7,9 @@
     <nav class="mainnav" aria-label="Main">
         <ul>
             <li>
-                <button class="nav-item__icon-button-with-text">
-                    <span class="nav-item__label nav-item__label--bold">
-                        Projects
-                    </span>
-                    <div class="nav-item__icon-wrapper">
+                <button>
+                    <span>Projects</span>
+                    <div>
                         <img
                             src="/icons/keyboard-arrow-down.svg"
                             alt="Arrow down"
@@ -20,13 +18,13 @@
                 </button>
             </li>
             <li>
-                <a href="/" class="nav-item__label">Experiments</a>
+                <a href="/">Experiments</a>
             </li>
             <li>
-                <a href="/" class="nav-item__label">Interests</a>
+                <a href="/">Interests</a>
             </li>
             <li>
-                <a href="/" class="nav-item__label">Contact</a>
+                <a href="/">Contact</a>
             </li>
         </ul>
     </nav>
@@ -49,25 +47,25 @@
         gap: 40px;
         align-items: center;
     }
-    .nav-item__icon-button-with-text {
+    .mainnav > ul > li > button {
         display: flex;
         align-items: center;
         gap: 4px;
     }
-    .nav-item__icon-wrapper {
+    .mainnav > ul > li > button > span {
+        font-weight: 700;
+    }
+    .mainnav > ul > li > button > div {
         width: 18px;
         height: 18px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .nav-item__label {
+    .mainnav > ul > li > a {
         color: var(--Black);
         font-size: 15px;
         font-weight: 400;
         line-height: 28px;
-    }
-    .nav-item__label--bold {
-        font-weight: 700;
     }
 </style>
