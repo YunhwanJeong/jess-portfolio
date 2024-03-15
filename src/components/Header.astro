@@ -1,0 +1,71 @@
+<header id="side-header">
+    <div class="site-logo-wrapper">
+        <a href="/" aria-label="Back to Jess's portfolio home page">
+            <img src="/favicon.svg" alt="Jess's portfolio site logo" />
+        </a>
+    </div>
+    <nav class="mainnav" aria-label="Main">
+        <ul>
+            <li>
+                <button class="nav-item__icon-button-with-text">
+                    <span class="nav-item__label nav-item__label--bold">
+                        Projects
+                    </span>
+                    <div class="nav-item__icon-wrapper">
+                        <img
+                            src="/icons/keyboard-arrow-down.svg"
+                            alt="Arrow down"
+                        />
+                    </div>
+                </button>
+            </li>
+            <li>
+                <a href="/" class="nav-item__label">Experiments</a>
+            </li>
+            <li>
+                <a href="/" class="nav-item__label">Interests</a>
+            </li>
+            <li>
+                <a href="/" class="nav-item__label">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<style>
+    #side-header {
+        padding: 11px 96px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mainnav .logo-wrapper {
+        width: 40px;
+        height: 40px;
+    }
+    .mainnav > ul {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+    .nav-item__icon-button-with-text {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    .nav-item__icon-wrapper {
+        width: 18px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-item__label {
+        color: var(--Black);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .nav-item__label--bold {
+        font-weight: 700;
+    }
+</style>
