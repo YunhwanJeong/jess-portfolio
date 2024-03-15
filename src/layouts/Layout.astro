@@ -1,6 +1,7 @@
 ---
 import 'normalize.css';
 import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
 
 interface Props {
     title: string;
@@ -63,7 +64,7 @@ const { title } = Astro.props;
         <main>
             <slot />
         </main>
-        <footer></footer>
+        <Footer />
     </body>
 </html>
 <style is:global>
@@ -76,6 +77,11 @@ const { title } = Astro.props;
         font-style: normal;
         background: #ededed;
     }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr;
+    }
     /* Reset CSS */
     a {
         text-decoration: none;
@@ -87,5 +93,7 @@ const { title } = Astro.props;
     ul,
     ol {
         list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
 </style>
