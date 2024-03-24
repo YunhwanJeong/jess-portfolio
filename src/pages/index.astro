@@ -2,4 +2,32 @@
 import Layout from '@layouts/Layout.astro';
 ---
 
-<Layout title="Home"> hello </Layout>
+<Layout title="Home">
+    <section class="page-wrapper">
+        <h1>
+            Hi, I’m Jess<span>*</span>
+        </h1>
+    </section>
+</Layout>
+
+<style>
+    .page-wrapper {
+        padding: 92px 96px;
+    }
+    h1 {
+        color: var(--secondary_typography, #191919);
+        font-size: 100px;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: -4px;
+    }
+
+    h1 > span {
+        color: var(--primary, #0064ff);
+        font-size: 70px;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -2.8px;
+        vertical-align: top;
+    }
+</style>
