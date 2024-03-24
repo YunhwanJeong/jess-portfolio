@@ -42,8 +42,10 @@ const { title } = Astro.props;
 <style is:global>
     :root {
         --Black: #2d2d2d;
+        --primary: #0064ff;
         --primary-bg: #ffffff;
         --primary_typography: #2d2d2d;
+        --secondary_typography: #191919;
     }
     html {
         font-family: 'Open Sans', sans-serif;
@@ -61,6 +63,14 @@ const { title } = Astro.props;
     /* Reset CSS */
     * {
         box-sizing: border-box;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
     }
     a {
         text-decoration: none;
