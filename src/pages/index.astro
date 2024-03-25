@@ -4,30 +4,91 @@ import Layout from '@layouts/Layout.astro';
 
 <Layout title="Home">
     <section class="page-wrapper">
-        <h1>
-            Hi, I’m Jess<span>*</span>
-        </h1>
+        <section class="intro">
+            <h1>
+                Hi, I’m Jess<span>*</span>
+            </h1>
+            <h2>
+                Jess Oh is a product designer,<br />
+                who strives to make life easier for users.
+            </h2>
+            <h3>
+                Originally from Seoul and live in the<br />
+                <strong>Greater Toronto Area.</strong>
+            </h3>
+            <div class="links">
+                <a href="/">About</a>
+                <span>|</span>
+                <a href="/">
+                    <span>Resume</span>
+                    <div>
+                        <img
+                            src="/icons/link_arrow_right_up.svg"
+                            alt="Link arrow right up icon"
+                        />
+                    </div>
+                </a>
+            </div>
+        </section>
+        <article>projects list scroll</article>
     </section>
 </Layout>
 
 <style>
     .page-wrapper {
         padding: 92px 96px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 300px;
     }
-    h1 {
-        color: var(--secondary_typography, #191919);
-        font-size: 100px;
+    .intro > h1 {
+        color: var(--secondary-typography, #191919);
+        font-size: 80px;
         font-weight: 800;
         line-height: normal;
         letter-spacing: -4px;
+        margin-bottom: 30px;
     }
-
-    h1 > span {
+    .intro > h1 > span {
         color: var(--primary, #0064ff);
-        font-size: 70px;
+        font-size: 50px;
         font-weight: 600;
         line-height: normal;
         letter-spacing: -2.8px;
         vertical-align: top;
+    }
+    .intro > h2 {
+        color: var(--primary_typography, #2d2d2d);
+        font-size: 25px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -1px;
+    }
+    .intro > h3 {
+        color: var(--tertiary-typography, #666e7a);
+        font-size: 25px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -1px;
+        margin-bottom: 22px;
+    }
+    .intro > h3 > strong {
+        font-weight: 600;
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.8px;
+        color: var(--clickable-text-primary, #0e131b);
+    }
+
+    .links > a {
+        display: flex;
+        gap: 5px;
     }
 </style>
