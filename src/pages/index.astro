@@ -3,89 +3,106 @@ import Layout from '@layouts/Layout.astro';
 ---
 
 <Layout title="Home">
-    <section class="page-wrapper">
-        <section class="intro">
-            <h1>
-                Hi, I’m Jess<span>*</span>
-            </h1>
-            <h2>
-                Jess Oh is a product designer,<br />
-                who strives to make life easier for users.
-            </h2>
-            <h3>
-                Originally from Seoul and live in the<br />
-                <strong>Greater Toronto Area.</strong>
-            </h3>
-            <div class="links">
-                <a href="/">About</a>
-                <span>|</span>
-                <a href="/">
-                    <span>Resume</span>
-                    <div>
-                        <img
-                            src="/icons/link_arrow_right_up.svg"
-                            alt="Link arrow right up icon"
-                        />
-                    </div>
-                </a>
-            </div>
-        </section>
-        <article>profile photo</article>
-    </section>
+  <section class="hero">
+    <div class="hero__text">
+      <h1>
+        Hi, I’m Jess<span>*</span>
+      </h1>
+      <h2>
+        I’m a product designer,<br />
+        who strives to make life easier for users.
+      </h2>
+      <h3>
+        Originally from Seoul and live in the<br />
+        Greater Toronto Area.
+      </h3>
+      <div class="hero__links">
+        <a href="/">About</a>
+        <span>|</span>
+        <a href="/">
+          <span>Resume</span>
+          <div>
+            <img
+              src="/icons/link_arrow_right_up.svg"
+              alt="Link arrow right up icon"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+    <canvas id="canvas3d" width="328px" height="472px"></canvas>
+  </section>
 </Layout>
 
 <style>
-    .page-wrapper {
-        padding: 92px 96px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 300px;
-    }
-    .intro > h1 {
-        font-size: 80px;
-        font-weight: 800;
-        line-height: normal;
-        letter-spacing: -4px;
-        margin-bottom: 30px;
-    }
-    .intro > h1 > span {
-        color: #1F73F1;
-        font-size: 50px;
-        font-weight: 600;
-        line-height: normal;
-        letter-spacing: -2.8px;
-        vertical-align: top;
-    }
-    .intro > h2 {
-        font-size: 25px;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: -1px;
-    }
-    .intro > h3 {
-        color: #979FAC;
-        font-size: 25px;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: -1px;
-        margin-bottom: 22px;
-    }
-    .intro > h3 > strong {
-        font-weight: 600;
-    }
+  .hero {
+    padding: 60px 183px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    min-height: 600px;
+    box-sizing: border-box;
+  }
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero__text > h1 {
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -4px;
+    margin-bottom: 26px;
+  }
+  .hero__text > h1 > span {
+    color: #1f73f1;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.8px;
+    vertical-align: top;
+  }
+  .hero__text > h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    margin-bottom: 8px;
+  }
+  .hero__text > h3 {
+    color: #979fac;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    margin-bottom: 22px;
+  }
 
-    .links {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: normal;
-        letter-spacing: -0.8px;
-    }
+  .hero__links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.8px;
+  }
 
-    .links > a {
-        display: flex;
-        gap: 5px;
-    }
+  .hero__links > a {
+    display: flex;
+    gap: 5px;
+  }
 </style>
+<script>
+  import { Application } from '@splinetool/runtime';
+
+  const canvas = document.getElementById('canvas3d') as HTMLCanvasElement;
+  const app = new Application(canvas);
+  app.load('https://prod.spline.design/O9V9WwBqWrCJUwzS/scene.splinecode');
+</script>
