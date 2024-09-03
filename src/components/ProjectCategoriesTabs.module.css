@@ -1,0 +1,27 @@
+.tabs-root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.tabs-trigger[data-state='active'] {
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 3px;
+}
+
+.tabs-trigger-divider {
+  margin: 0 8px;
+}
+
+.tabs-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(609px, 800px));
+}
+
+.project {
+  cursor: pointer;
+}
+
+.project > img {
+  width: 100%;
+}

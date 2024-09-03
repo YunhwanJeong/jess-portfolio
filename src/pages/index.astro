@@ -1,4 +1,5 @@
 ---
+import ProjectCategoriesTabs from '@components/ProjectCategoriesTabs';
 import Layout from '@layouts/Layout.astro';
 ---
 
@@ -32,15 +33,19 @@ import Layout from '@layouts/Layout.astro';
     </div>
     <canvas id="canvas3d" width="328px" height="472px"></canvas>
   </section>
+  <section class="projects">
+    <ProjectCategoriesTabs />
+  </section>
 </Layout>
 
 <style>
   .hero {
-    padding: 60px 183px;
+    padding: 0px 183px;
+    margin-top: 60px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
     align-items: center;
-    gap: 250px;
     min-height: 600px;
     box-sizing: border-box;
   }
@@ -97,6 +102,13 @@ import Layout from '@layouts/Layout.astro';
   .hero__links > a {
     display: flex;
     gap: 5px;
+  }
+
+  .projects {
+    padding: 0px clamp(96px, 7vw, 183px);
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
   }
 </style>
 <script>
