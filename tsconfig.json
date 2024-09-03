@@ -1,7 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "/Users/aaron/Desktop/dev/projects/jess-portfolio",
+    "baseUrl": ".",
     "paths": {
       "@components/*": [
         "src/components/*"
