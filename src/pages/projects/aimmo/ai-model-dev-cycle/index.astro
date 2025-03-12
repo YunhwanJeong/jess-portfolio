@@ -1,0 +1,129 @@
+---
+import Layout from "@layouts/Layout.astro";
+import styles from "./index.module.css";
+
+const placeholderImage = "/placeholder.jpg";
+---
+
+<Layout title="AI Model Development Cycle">
+  <article class={styles.projectArticle}>
+    <!-- Hero Section -->
+    <section class={styles.heroSection}>
+      <h1 class={styles.heroTitle}>
+        Revamping the AI Model Development Life Cycle
+      </h1>
+      <p class={styles.heroSubtitle}>
+        Streamlining the AI model development process for autonomous driving
+      </p>
+      <div class={styles.heroImageWrapper}>
+        <img src={placeholderImage} alt="Hero Image" class={styles.heroImage} />
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class={styles.section}>
+      <h2 class={styles.sectionTitle}>Overview</h2>
+      <p class={styles.sectionText}>
+        AIMMO’s AI model development workflow was fragmented and inefficient. We
+        needed a centralized solution to improve team productivity and
+        streamline tasks for engineers.
+      </p>
+    </section>
+
+    <!-- Background -->
+    <section class={styles.section}>
+      <h2 class={styles.sectionTitle}>Background</h2>
+      <div class={styles.twoColumnLayout}>
+        <div>
+          <p class={styles.sectionText}>
+            AI engineers struggled with inefficiencies caused by multiple
+            disconnected tools, interfaces, and limited monitoring capabilities
+            for AI models.
+          </p>
+        </div>
+        <div>
+          <img
+            src={placeholderImage}
+            alt="Background Image"
+            class={styles.sectionImage}
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class={styles.section}>
+      <h2 class={styles.sectionTitle}>Problem</h2>
+      <div class={styles.problemGrid}>
+        <div class={styles.card}>
+          <h3 class={styles.cardTitle}>Fragmented Workflow</h3>
+          <p class={styles.cardText}>
+            Engineers switched between tools, causing inefficiencies and
+            potential errors in the development cycle.
+          </p>
+        </div>
+        <div class={styles.card}>
+          <h3 class={styles.cardTitle}>Limited Visibility</h3>
+          <p class={styles.cardText}>
+            Lack of centralized monitoring made tracking performance and
+            progress more difficult for teams.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class={styles.section}>
+      <h2 class={styles.sectionTitle}>Solution</h2>
+      <p class={styles.sectionText}>
+        We developed a unified dashboard that integrates essential tools and
+        real-time monitoring for the AI model development process.
+      </p>
+      <div class={styles.solutionImageWrapper}>
+        <img
+          src={placeholderImage}
+          alt="Solution Image"
+          class={styles.solutionImage}
+        />
+      </div>
+    </section>
+
+    <!-- Development Timeline -->
+    <section class={styles.section}>
+      <h2 class={styles.sectionTitle}>Development Timeline</h2>
+      <div class={styles.timeline}>
+        <div class={styles.timelineCard}>
+          <h3 class={styles.cardTitle}>Phase 1: Research & Analysis</h3>
+          <p class={styles.cardText}>
+            Analyzed the existing workflow, conducted user interviews, and
+            identified pain points for AI engineers.
+          </p>
+        </div>
+        <div class={styles.timelineCard}>
+          <h3 class={styles.cardTitle}>Phase 2: Prototyping & Design</h3>
+          <p class={styles.cardText}>
+            Created wireframes, high-fidelity designs, and iterated based on
+            real-time feedback from users.
+          </p>
+        </div>
+        <div class={styles.timelineCard}>
+          <h3 class={styles.cardTitle}>Phase 3: Implementation</h3>
+          <p class={styles.cardText}>
+            Worked collaboratively with developers to implement the unified
+            dashboard for production.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section class={styles.section}>
+      <h2 class={styles.sectionTitle}>Impact</h2>
+      <p class={styles.sectionText}>
+        The new unified dashboard improved productivity, reduced development
+        cycle inefficiencies, and streamlined the workflow for AI engineers. It
+        empowered teams with real-time insights, enhancing overall performance.
+      </p>
+    </section>
+  </article>
+</Layout>

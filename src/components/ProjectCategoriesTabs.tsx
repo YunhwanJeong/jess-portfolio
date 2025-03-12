@@ -30,7 +30,7 @@ export default function ProjectCategoriesTabs() {
         </Tabs.Trigger>
       </Tabs.List>
       <Tabs.Content className={Styles["tabs-content"]} value="tab1">
-        <a className={Styles.project}>
+        <a className={Styles.project} href="/projects/aimmo/ai-model-dev-cycle">
           <img src={AimmoRevampImage.src}></img>
         </a>
         <a className={Styles.project}>
