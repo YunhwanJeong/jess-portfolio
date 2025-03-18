@@ -34,16 +34,26 @@ import Layout from "@layouts/Layout.astro";
 
     <!-- Company Info Box -->
     <section class="info-box">
-      <div class="icon">💡</div>
       <div class="info-content">
-        <h3>AIMMO: AI Data Solutions</h3>
-        <p>
-          AIMMO is leads in artificial intelligence, offering advanced data
-          solutions that drive innovation across various sectors. Focused on
-          autonomous driving, smart cities, CCTV, robotics, drones, maritime,
-          and construction equipment, AIMMO combines human expertise with AI to
-          optimize efficiency and enhance technology in real-world applications.
-        </p>
+        <div class="info-header">
+          <span class="info-header-icon">💡</span>
+          <h3>
+            <a href="https://www.aimmo.ai" target="_blank">AIMMO</a>: AI Data
+            Solutions
+          </h3>
+        </div>
+        <ul class="info-list">
+          <li>
+            AIMMO leads in artificial intelligence, providing advanced data
+            solutions that drive innovation across various industries.
+          </li>
+          <li>
+            Specializing in autonomous driving, smart cities, CCTV, robotics,
+            drones, maritime, and construction equipment, AIMMO combines human
+            expertise with AI to optimize efficiency and enhance real-world
+            technology.
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -229,7 +239,6 @@ import Layout from "@layouts/Layout.astro";
     padding: 0 96px;
     max-width: 1248px;
     margin: 100px auto 0;
-    height: 100vh;
   }
   .hero-image {
     max-width: 1248px;
@@ -297,35 +306,51 @@ import Layout from "@layouts/Layout.astro";
     align-items: center;
     gap: 12px;
     max-width: 802px;
-    margin: 0 auto;
+    margin: 200px auto;
     padding: 52px 42px;
     border: 1px solid #ebebeb;
     border-radius: 8px;
-    margin-bottom: 100px;
-  }
-
-  .icon {
-    font-size: 24px;
   }
 
   .info-content {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+  }
+
+  .info-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 12px;
+
+    .info-header-icon {
+      font-size: 24px;
+      font-weight: 500;
+      color: #d3d3d3;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #d3d3d3;
+
+      a {
+        text-decoration: underline;
+        color: #1f73f1;
+      }
+    }
   }
 
-  .info-content h3 {
-    font-size: 24px;
-    font-weight: 500;
-    color: #d3d3d3;
-  }
+  .info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 
-  .info-content p {
-    font-size: 18px;
-    line-height: 1.33;
-    color: #0c0d10;
+    li {
+      list-style: disc;
+    }
   }
-
   /* Content sections */
   .content-section {
     max-width: 1248px;
