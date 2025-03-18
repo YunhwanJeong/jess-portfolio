@@ -103,12 +103,12 @@ import Layout from "@layouts/Layout.astro";
           </div>
         </div>
       </div>
-
-      <h2>Background</h2>
     </section>
 
     <!-- Background section -->
     <section class="content-section">
+      <h2>Background</h2>
+
       <div class="background-container">
         <div class="background-header">
           <h3>Why redesign the core product?</h3>
@@ -306,7 +306,7 @@ import Layout from "@layouts/Layout.astro";
     align-items: center;
     gap: 12px;
     max-width: 802px;
-    margin: 200px auto;
+    margin: 600px auto 0;
     padding: 52px 42px;
     border: 1px solid #ebebeb;
     border-radius: 8px;
@@ -354,15 +354,20 @@ import Layout from "@layouts/Layout.astro";
   /* Content sections */
   .content-section {
     max-width: 1248px;
-    margin: 0 auto;
+    margin: 650px auto 0;
     padding: 0 96px;
-    margin-bottom: 70px;
+
+    h2 {
+      margin-bottom: 550px;
+    }
   }
 
   .overview-box {
     background-color: #131415;
     padding: 40px;
     border-radius: 8px;
+
+    text-align: center;
   }
 
   .overview-content {
