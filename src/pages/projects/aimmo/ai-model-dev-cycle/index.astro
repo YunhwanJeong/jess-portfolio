@@ -1,5 +1,9 @@
 ---
+import AimmoHeroImage from "@images/projects/aimmo/aimmo-hero.png";
+import AimmoMetricsImage from "@images/projects/aimmo/aimmo_2.png";
+import AimmoModelDevCycleImage from "@images/projects/aimmo/model_dev_cycle.png";
 import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="AIMMO - Revamping the AI Model Development Life Cycle">
@@ -24,10 +28,7 @@ import Layout from "@layouts/Layout.astro";
         </div>
 
         <div class="hero-image">
-          <img
-            src="/images/projects/aimmo/aimmo-hero.png"
-            alt="AIMMO hero image"
-          />
+          <Image src={AimmoHeroImage} alt="AIMMO hero image" />
         </div>
       </div>
     </section>
@@ -68,8 +69,8 @@ import Layout from "@layouts/Layout.astro";
             <div class="metrics-card-header">
               <h4>Improve the flow of complex work across products</h4>
             </div>
-            <img
-              src="/images/projects/aimmo/aimmo_2.png"
+            <Image
+              src={AimmoMetricsImage}
               alt="AIMMO metrics visualization"
               class="metrics-image"
             />
@@ -95,8 +96,8 @@ import Layout from "@layouts/Layout.astro";
                 target="_blank">CES</a
               > Prototype Launch
             </h4>
-            <img
-              src="/images/projects/aimmo/model_dev_cycle.png"
+            <Image
+              src={AimmoModelDevCycleImage}
               alt="AI Model Development Cycle"
               class="overview-image"
             />
@@ -391,7 +392,6 @@ import Layout from "@layouts/Layout.astro";
       background-color: #0d0d0d;
       padding: 58px 30px;
       border-radius: 4px;
-      border: 1px solid #393939;
       text-align: center;
       flex: 1;
 
@@ -454,8 +454,6 @@ import Layout from "@layouts/Layout.astro";
       flex-direction: column;
       gap: 20px;
       width: 100%;
-      list-style: disc;
-      margin-left: 20px;
     }
 
     .metrics-list li {
