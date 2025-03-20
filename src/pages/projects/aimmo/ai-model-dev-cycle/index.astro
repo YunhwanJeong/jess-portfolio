@@ -2,6 +2,13 @@
 import AimmoCESImage from "@images/projects/aimmo/aimmo-ces.png";
 import AimmoHeroImage from "@images/projects/aimmo/aimmo-hero.png";
 import AimmoWorkspaceImage from "@images/projects/aimmo/aimmo-workspace.png";
+import BackgroundArrowRight from "@images/projects/aimmo/background-arrow-right.png";
+import BackgroundLeft from "@images/projects/aimmo/background-left.png";
+import BackgroundRightDataAnnotation from "@images/projects/aimmo/background-right-data-annotation.png";
+import BackgroundRightDataCollection from "@images/projects/aimmo/background-right-data-collection.png";
+import BackgroundRightDataCuration from "@images/projects/aimmo/background-right-data-curation.png";
+import BackgroundRightDataEvaluation from "@images/projects/aimmo/background-right-data-evaluation.png";
+
 import Layout from "@layouts/Layout.astro";
 import { Image } from "astro:assets";
 ---
@@ -117,13 +124,11 @@ import { Image } from "astro:assets";
 
         <div class="background-container">
           <div class="background-header">
-            <h3>Why redesign the core product?</h3>
-          </div>
-          <div class="background-content">
-            <h4>
+            <p>Why redesign the core product?</p>
+            <h3>
               Enhancing Model Training and Deployment with Streamlined UX and
               Automation
-            </h4>
+            </h3>
             <p>
               At AIMMO, a company specializing in AI data solutions across
               various industries, I spearheaded the redesign of our core product
@@ -133,378 +138,410 @@ import { Image } from "astro:assets";
               integral to our operations.
             </p>
           </div>
+          <div class="background-content">
+            <div class="background-content-left">
+              <div>
+                <Image
+                  src={BackgroundLeft}
+                  alt="A group of pedestrians crossing a city street at night, with bounding boxes labeling each person."
+                />
+              </div>
+              <p>Company focused exclusively on data annotation.</p>
+            </div>
+            <div class="background-content-arrow">
+              <Image src={BackgroundArrowRight} alt="Arrow right" />
+            </div>
+            <div class="background-content-right">
+              <div>
+                <div>
+                  <Image
+                    src={BackgroundRightDataCollection}
+                    alt="Illustration of a vintage white car with two location markers and speech bubbles above it, representing real-time data collection."
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={BackgroundRightDataCuration}
+                    alt="Illustration representing data curation, featuring a weather selection menu with “Rainy” checked and an image of a city street with a bus in the rain."
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={BackgroundRightDataAnnotation}
+                    alt="Illustration representing data annotation, showing pedestrians crossing a street with bounding boxes highlighting each person."
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={BackgroundRightDataEvaluation}
+                    alt="Illustration representing data evaluation, featuring a split-screen image of a truck on a road, with one side in grayscale and the other in full color, labeled “Synthetic data.”"
+                  />
+                </div>
+              </div>
+              <p>
+                The goal is to enhance the product lines to offer comprehensive
+                end-to-end model training and deployment.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="vision-container">
-          <p class="vision-text">
-            The goal is to enhance the product lines to offer comprehensive
-            end-to-end model training and deployment.
+        <div class="objective-container">
+          <h4>Objective</h4>
+          <p>
+            The main objective was to streamline processes, minimizing labor
+            intensity and boosting user engagement, in line with the company's
+            Q4 goals for operational optimization.
           </p>
-
-          <div class="workflow-diagram">
-            <!-- Will add the workflow diagram content here -->
-          </div>
         </div>
-      </section>
-
-      <!-- Research section -->
-      <section class="content-section">
-        <h2>UX Research</h2>
-
-        <div class="research-phase">
-          <div class="phase-header">
-            <h3>Research & Discovery: Phase 1</h3>
-          </div>
-          <div class="phase-content">
-            <h4>Company Seeks Comprehensive AI Model Deployment Service</h4>
-            <p>
-              Before we started the redesign, we surveyed our customers and
-              worked with the sales team to collect customer testimonials. The
-              company's input was essential in finalizing the next year deal.
-            </p>
-          </div>
-
-          <div class="testimonials">
-            <!-- Testimonials content here -->
-          </div>
-        </div>
-      </section>
-
-      <!-- More sections will follow for Solutions and Takeaways -->
-
-      <section id="solutions" class="content-section">
-        <h2>Solutions</h2>
-        <h3 class="subtitle">Comprehensive AI Training Product Redesign</h3>
-
-        <!-- Solutions content will be added -->
-      </section>
-
-      <section class="content-section">
-        <h2>Takeaways</h2>
-
-        <!-- Takeaways content will be added -->
       </section>
     </section>
+
+    <!-- Research section -->
+    <section class="content-section">
+      <h2>UX Research</h2>
+
+      <div class="research-phase">
+        <div class="phase-header">
+          <h3>Research & Discovery: Phase 1</h3>
+        </div>
+        <div class="phase-content">
+          <h4>Company Seeks Comprehensive AI Model Deployment Service</h4>
+          <p>
+            Before we started the redesign, we surveyed our customers and worked
+            with the sales team to collect customer testimonials. The company's
+            input was essential in finalizing the next year deal.
+          </p>
+        </div>
+
+        <div class="testimonials">
+          <!-- Testimonials content here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- More sections will follow for Solutions and Takeaways -->
+
+    <section id="solutions" class="content-section">
+      <h2>Solutions</h2>
+      <h3 class="subtitle">Comprehensive AI Training Product Redesign</h3>
+
+      <!-- Solutions content will be added -->
+    </section>
+
+    <section class="content-section">
+      <h2>Takeaways</h2>
+
+      <!-- Takeaways content will be added -->
+    </section>
   </div>
+</Layout>
 
-  <style>
-    /* Base styles */
-    .aimmo-main {
-      color: #e7e7e7;
-      background-color: #0d0d0d;
-      position: relative;
-      overflow-x: hidden;
+<style>
+  /* Base styles */
+  .aimmo-main {
+    color: #e7e7e7;
+    background-color: #0d0d0d;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    letter-spacing: -2px;
+  }
+
+  h2 {
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 1.77;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+    margin: 0 0 15px;
+  }
+
+  /* Hero section */
+  .hero {
+    max-width: 1248px;
+    margin: 100px auto 0;
+  }
+  .hero-image {
+    max-width: 1248px;
+    margin: 100px auto 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 8px;
     }
+  }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin: 0;
-      font-weight: 700;
-    }
-
+  .project-info {
     h1 {
-      font-size: 50px;
-      line-height: 1.2;
-      letter-spacing: -2px;
+      margin-top: 24px;
     }
+  }
 
-    h2 {
-      font-size: 80px;
-      line-height: 1.2;
+  .project-tags {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 14px;
+    color: #d3d3d3;
+  }
+
+  .tag-divider {
+    color: #d3d3d3;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    padding: 0 22px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline {
+    border: 2px solid #fff;
+    color: #fff;
+  }
+
+  .btn-filled {
+    background-color: #fff;
+    color: #2d2d2d;
+  }
+
+  /* Info box */
+  .info-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 802px;
+    margin: 600px auto 0;
+    padding: 52px 42px;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+  }
+
+  .info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .info-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    .info-header-icon {
+      font-size: 24px;
       font-weight: 500;
-      margin-bottom: 40px;
-      text-align: center;
+      color: #d3d3d3;
     }
 
     h3 {
-      font-size: 40px;
-      line-height: 1.2;
-      font-weight: 700;
-    }
-
-    h4 {
-      font-size: 18px;
-      line-height: 1.77;
-      font-weight: 700;
-    }
-
-    p {
-      font-size: 20px;
-      line-height: 1.3;
-      font-weight: 400;
-      letter-spacing: -0.8px;
-      margin: 0 0 15px;
-    }
-
-    /* Hero section */
-    .hero {
-      max-width: 1248px;
-      margin: 100px auto 0;
-    }
-    .hero-image {
-      max-width: 1248px;
-      margin: 100px auto 0;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        border-radius: 8px;
-      }
-    }
-
-    .project-info {
-      h1 {
-        margin-top: 24px;
-      }
-    }
-
-    .project-tags {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      font-size: 14px;
-      color: #d3d3d3;
-    }
-
-    .tag-divider {
-      color: #d3d3d3;
-    }
-
-    .cta-buttons {
-      display: flex;
-      gap: 15px;
-      margin-top: 30px;
-    }
-
-    .btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 45px;
-      padding: 0 22px;
-      font-size: 14px;
+      font-size: 24px;
       font-weight: 500;
-      border-radius: 20px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .btn-outline {
-      border: 2px solid #fff;
-      color: #fff;
-    }
-
-    .btn-filled {
-      background-color: #fff;
-      color: #2d2d2d;
-    }
-
-    /* Info box */
-    .info-box {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      max-width: 802px;
-      margin: 600px auto 0;
-      padding: 52px 42px;
-      border: 1px solid #ebebeb;
-      border-radius: 8px;
-    }
-
-    .info-content {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .info-header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 12px;
-
-      .info-header-icon {
-        font-size: 24px;
-        font-weight: 500;
-        color: #d3d3d3;
-      }
-
-      h3 {
-        font-size: 24px;
-        font-weight: 500;
-        color: #d3d3d3;
-
-        a {
-          text-decoration: underline;
-          color: #1f73f1;
-        }
-      }
-    }
-
-    .info-list {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-
-      li {
-        list-style: disc;
-      }
-    }
-    /* Content sections */
-    .content-section {
-      max-width: 1248px;
-      margin: 650px auto 0;
-      padding: 0 96px;
-
-      h2 {
-        margin-bottom: 550px;
-      }
-    }
-
-    .overview-box {
-      background-color: #131415;
-      padding: 40px;
-      border-radius: 8px;
-      margin: 0 -96px;
-    }
-
-    .overview-box h3 {
-      font-size: 40px;
-      font-weight: 700;
-      margin-bottom: 24px;
-      text-align: center;
-    }
-
-    .overview-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-      margin-top: 40px;
-    }
-
-    .project-card {
-      background-color: #0d0d0d;
-      padding: 58px 30px;
-      border-radius: 4px;
-      text-align: center;
-      flex: 1;
+      color: #d3d3d3;
 
       a {
         text-decoration: underline;
         color: #1f73f1;
       }
     }
+  }
 
-    .project-card h4 {
-      font-size: 18px;
-      font-weight: 700;
-      text-align: center;
-    }
+  .info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 
-    .project-card p {
-      font-size: 14px;
-      text-align: center;
-      margin-top: 60px;
+    li {
+      list-style: disc;
     }
+  }
+  /* Content sections */
+  .content-section {
+    max-width: 1248px;
+    margin: 650px auto 0;
+    padding: 0 96px;
 
-    .overview-image {
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
-      border: 1px solid #393939;
-      margin-top: 30px;
+    h2 {
+      margin-bottom: 550px;
     }
+  }
 
-    .metrics-section {
-      margin-top: 51px;
-    }
+  .overview-box {
+    background-color: #131415;
+    padding: 40px;
+    border-radius: 8px;
+    margin: 0 -96px;
+  }
 
-    .metrics-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 52px;
-      padding: 58px 14px;
-      background-color: #0d0d0d;
-      border-radius: 4px;
-      width: 100%;
-      max-width: 602px;
-      margin: 0 auto;
+  .overview-box h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .overview-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 40px;
+  }
+
+  .project-card {
+    background-color: #0d0d0d;
+    padding: 58px 30px;
+    border-radius: 4px;
+    text-align: center;
+    flex: 1;
+
+    a {
+      text-decoration: underline;
+      color: #1f73f1;
     }
-    .metrics-card h4 {
+  }
+
+  .project-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .project-card p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .overview-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #393939;
+    margin-top: 30px;
+  }
+
+  .metrics-section {
+    margin-top: 51px;
+  }
+
+  .metrics-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 52px;
+    padding: 58px 14px;
+    background-color: #0d0d0d;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 602px;
+    margin: 0 auto;
+  }
+  .metrics-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .metrics-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .metrics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .metrics-list li {
+    font-size: 14px;
+  }
+
+  .background-header {
+    p {
       font-size: 20px;
-      font-weight: 700;
-      text-align: center;
     }
 
-    .metrics-image {
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
+    h3 {
+      margin: 20px 0;
     }
+  }
 
-    .metrics-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      width: 100%;
-    }
+  .background-content {
+    margin-top: 70px;
+  }
 
-    .metrics-list li {
-      font-size: 14px;
-    }
+  /* Research section */
+  .research-phase {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .background-container {
-      display: flex;
-      flex-direction: column;
-      gap: 19px;
-      max-width: 942px;
-    }
+  .phase-content {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
 
-    .background-content {
-      display: flex;
-      flex-direction: column;
-      gap: 19px;
-    }
-
-    .vision-container {
-      margin-top: 50px;
-      position: relative;
-    }
-
-    .vision-text {
-      text-align: center;
-      font-size: 18px;
-      line-height: 1.4;
-      max-width: 800px;
-      margin: 0 auto 30px;
-    }
-
-    /* Research section */
-    .research-phase {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .phase-content {
-      display: flex;
-      flex-direction: column;
-      gap: 19px;
-    }
-
-    /* Solutions and Takeaways */
-    .subtitle {
-      text-align: center;
-      font-size: 30px;
-      font-weight: 500;
-      margin-bottom: 50px;
-      color: #cdd3df;
-    }
-  </style>
-</Layout>
+  /* Solutions and Takeaways */
+  .subtitle {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: #cdd3df;
+  }
+</style>
