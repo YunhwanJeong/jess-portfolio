@@ -162,7 +162,7 @@ import { Image } from "astro:assets";
                 <div class="background-content-right-image">
                   <Image
                     src={BackgroundRightDataCuration}
-                    alt="Illustration representing data curation, featuring a weather selection menu with “Rainy” checked and an image of a city street with a bus in the rain."
+                    alt="Illustration representing data curation, featuring a weather selection menu with 'Rainy' checked and an image of a city street with a bus in the rain."
                   />
                 </div>
                 <div class="background-content-right-image">
@@ -174,7 +174,7 @@ import { Image } from "astro:assets";
                 <div class="background-content-right-image">
                   <Image
                     src={BackgroundRightDataEvaluation}
-                    alt="Illustration representing data evaluation, featuring a split-screen image of a truck on a road, with one side in grayscale and the other in full color, labeled “Synthetic data.”"
+                    alt="Illustration representing data evaluation, featuring a split-screen image of a truck on a road, with one side in grayscale and the other in full color, labeled 'Synthetic data.'"
                   />
                 </div>
               </div>
@@ -200,9 +200,9 @@ import { Image } from "astro:assets";
     </section>
 
     <!-- Research section -->
-    <section class="content-section">
+    <section class="content-section ux-research-section">
       <h2>UX Research</h2>
-
+      <!-- Phase 1 -->
       <div class="research-phase">
         <div class="phase-header">
           <h3>Research & Discovery: Phase 1</h3>
@@ -210,14 +210,102 @@ import { Image } from "astro:assets";
         <div class="phase-content">
           <h4>Company Seeks Comprehensive AI Model Deployment Service</h4>
           <p>
-            Before we started the redesign, we surveyed our customers and worked
-            with the sales team to collect customer testimonials. The company's
-            input was essential in finalizing the next year deal.
+            Before we started the redesign, we surveyed our customers and worked with the sales team to collect customer testimonials.<br />
+            The company's input was essential in finalizing the next year deal.
           </p>
         </div>
-
         <div class="testimonials">
-          <!-- Testimonials content here -->
+          <div class="testimonial-quote">"Essential Elements for Upcoming Contracts?"</div>
+          <div class="testimonial-list">
+            <div class="testimonial-item">
+              <div class="testimonial-text">Emphasized that uploading large files for driver training increases operational load due to scalability challenges.</div>
+              <div class="testimonial-company">A Company</div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-text">It was highlighted that server scalability directly increases operational burden.</div>
+              <div class="testimonial-company">B Company</div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-text">AI models can alert you to risks to people or equipment around heavy machinery.</div>
+              <div class="testimonial-company">C Company</div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-text">CBM Data: No automation of logistics volume-related measurements.</div>
+              <div class="testimonial-company">D Company</div>
+            </div>
+          </div>
+          </div>
+      </div>
+      <!-- Phase 2 -->
+      <div class="research-phase">
+        <div class="phase-header">
+          <h3>Research & Discovery: Phase 2</h3>
+        </div>
+        <div class="phase-content">
+          <h4>How can we boost productivity for users of our tools, both internal and external?</h4>
+          <p>We conducted field interviews with 20 users to identify UX issues, leading us to initiate significant UX improvements.</p>
+        </div>
+        <div class="phase2-groups">
+          <div class="phase2-before">
+            <div class="before-label">BEFORE</div>
+            <img src="/images/ux-research/phase2-before.png" alt="Before screenshot" />
+          </div>
+          <div class="phase2-user-group">
+            <img src="/images/ux-research/phase2-union.svg" alt="A users group icon" />
+            <div class="user-group-stats">
+              <div class="user-group-percentage" style="color: #FFBCBC">65%</div>
+              <div class="user-group-label" style="color: #FFBCBC">A users group</div>
+              <div class="user-group-quote" style="color: #FFBCBC">"I'm confused because the list of projects has to go deep in a list format."</div>
+            </div>
+            <div class="user-group-desc">A user group consists of internal administrators managing the longest-serving users and labelers.</div>
+          </div>
+          <div class="phase2-user-group">
+            <img src="/images/ux-research/phase2-union-b.svg" alt="B users group icon" />
+            <div class="user-group-stats">
+              <div class="user-group-percentage" style="color: #CDD2FF">80%</div>
+              <div class="user-group-label" style="color: #CDD2FF">B users group</div>
+              <div class="user-group-quote" style="color: #CDD2FF">"I would like to see the menu bar get smaller or disappear when there is more content."</div>
+            </div>
+            <div class="user-group-desc">B user group is general labeling workers.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Phase 3 -->
+      <div class="research-phase">
+        <div class="phase-header">
+          <h3>Research & Discovery: Phase 3</h3>
+        </div>
+        <div class="phase-content">
+          <h4>To design the tool, I sought feedback from AI developers and the MLOps team.</h4>
+          <p>The development team and I met at least twice a week to design the product, as this is a tool for AI developers.<br />
+          To effectively tackle the project, I created a research plan to identify and address knowledge gaps, enabling informed design decisions. Understanding the AI training tool issues and evaluating competitors' offerings were crucial for the successful redesign of the product.</p>
+        </div>
+        <div class="phase3-diagram">
+          <img src="/images/ux-research/phase3-ellipse.svg" alt="Phase 3 ellipse" />
+          <img src="/images/ux-research/phase3-rectangle.svg" alt="Phase 3 rectangle" />
+          <img src="/images/ux-research/phase3-arrow1.svg" alt="Phase 3 arrow 1" />
+          <img src="/images/ux-research/phase3-arrow2.svg" alt="Phase 3 arrow 2" />
+        </div>
+        <div class="phase3-labels">
+          <div class="phase3-label">Raw file to model deployment simple version of information architecture</div>
+          <div class="phase3-label">Raw Files [DataLake from Autonomous Vehicles]</div>
+          <div class="phase3-label">Dataset List</div>
+          <div class="phase3-label">Data curation for high-quality model training</div>
+          <div class="phase3-label">Using artificial data(Synthetic data) to improve the training of models</div>
+          <div class="phase3-label">Model Workflow > Training > Deployment</div>
+        </div>
+      </div>
+      <!-- Phase 4 -->
+      <div class="research-phase">
+        <div class="phase-header">
+          <h3>Research & Discovery: Phase 4</h3>
+        </div>
+        <div class="phase-content">
+          <h4>Reviewed the end-to-end flow of Model deployment</h4>
+          <p>I reviewed the end-to-end flow to gain a better understanding of the model deployment process. I created the flowchart to identify which touch points caused pain points and to model the deployment flow from scratch.</p>
+        </div>
+        <div class="phase4-flowchart">
+          <img src="/images/ux-research/phase4-flowchart.png" alt="Phase 4 model deployment flowchart" />
         </div>
       </div>
     </section>
@@ -604,16 +692,52 @@ import { Image } from "astro:assets";
   }
 
   /* Research section */
-  .research-phase {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  .phase-header {
+    margin-bottom: 10px;
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 20px;
+    }
   }
 
   .phase-content {
     display: flex;
     flex-direction: column;
-    gap: 19px;
+    gap: 20px;
+    margin-bottom: 70px;
+
+    h4 {
+      font-size: 40px;
+    }
+  }
+
+
+  /* Ressearch Phase 1*/
+  .testimonials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .testimonial-quote {
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .testimonial-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .testimonial-item {
+        border: 1px solid #EBEBEB;
+        border-radius: 10px;
+        padding: 32px 40px;
+      }
+    }
   }
 
   /* Solutions and Takeaways */
